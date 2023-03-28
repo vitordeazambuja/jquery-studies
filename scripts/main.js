@@ -14,12 +14,12 @@ $(document).ready(()=>{
         });
     });
 
-    $('.buy-btn').on('mouseenter',()=>{
-        $('.buy-btn').css({
+    $('.buy-btn').on('mouseenter',event=>{
+        $(event.currentTarget).css({
             color:'#FCFAF9'
         })
-    }).on('mouseleave',()=>{
-        $('.buy-btn').css({
+    }).on('mouseleave',event=>{
+        $(event.currentTarget).css({
             color:'#48E5C2'
         })
     });
